@@ -35,6 +35,11 @@ var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms
    transparent: true,
 }).addTo(map);
 
+
+L.esri.tiledMapLayer({
+url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2015_fl&TRANSPARENT=true&SRS=EPSG:4326&FORMAT=image/png&WIDTH=800&HEIGHT=400'
+}).addTo(map);
+
 //SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2018_ia&STYLES=&SRS=EPSG:4326&BBOX=-97,40.2,-90,43.7&WIDTH=800&HEIGHT=400&FORMAT=image/png
  //   layers: '0',
  //   format: 'image/png',
