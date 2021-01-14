@@ -21,14 +21,14 @@ var map = L.map('mapid', {
 
 //var map = L.map(mapDiv, mapOptions);
 
-//L.tileLayer.wms({
-//   url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi'
-//}).addTo(map);
-
-var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdl_fl.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2018_fl&STYLES=&SRS=EPSG:4326&BBOX=-87.634938,%2024.523096,%20-80.031362,%2031.000888&WIDTH=800&HEIGHT=800&FORMAT=image/png',{
-   format: 'image/png',
-   transparent: true,
+L.tileLayer.wms({
+url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdl_fl.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2018_fl&STYLES=&SRS=EPSG:4326&BBOX=-87.63,24.52,-80.03,31.00&WIDTH=800&HEIGHT=800&FORMAT=image/png'
 }).addTo(map);
+
+//var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdl_fl.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2018_fl&STYLES=&SRS=EPSG:4326&BBOX=-87.63,24.52,-80.03,31.00&WIDTH=800&HEIGHT=800&FORMAT=image/png',{
+  // format: 'image/png',
+   //transparent: true,
+//}).addTo(map);
 
 
 
