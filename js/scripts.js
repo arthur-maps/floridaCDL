@@ -1,5 +1,8 @@
+
+//old
 //var mapboxAccessToken = 'pk.eyJ1IjoiYXJ0aHVyLW1hcHMiLCJhIjoiY2p4NHdjNXJrMDI1azQ5bTRwOW5jc2F5bSJ9.OSGinHj1JWVuEHIe91Eikw';
 
+//new
 //var mapboxAccessToken = 'pk.eyJ1IjoiYXJ0dXJvbmVpbGwiLCJhIjoiY2tlbm05dHpxMDBidzJxb2FjeWFyOTRhaCJ9.Ji9pd3XHvpjYkC0dGl6RUA';
    
 
