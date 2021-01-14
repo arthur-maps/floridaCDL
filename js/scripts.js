@@ -22,13 +22,26 @@ var map = L.map('mapid', {
 //   url: 'https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi'
 //}).addTo(map);
 
-//var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
-//    layers: 'cdl_2015'
+var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
+   service='WMS',
+   version=1.1.1,
+   request='GetMap',
+   layers: 'cdl_2015_fl',
+   SRS=EPSG:4326,
+   format: 'image/png',
+   transparent: true,
+}).addTo(map);
+
+//SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2018_ia&STYLES=&SRS=EPSG:4326&BBOX=-97,40.2,-90,43.7&WIDTH=800&HEIGHT=400&FORMAT=image/png
+ //   layers: '0',
+ //   format: 'image/png',
+ //   transparent: true,
+ //   attribution: "Andreas atlas © Iowa DNR"
 //}).addTo(map);
 
-var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2015&TRANSPARENT=true&SRS=EPSG:102004&BBOX=-3987459.135,168311.354,4472862.725,4177587.947&FORMAT=image/png&WIDTH=800&HEIGHT=400', {
-    layers: 'cdl_2015'
-}).addTo(map);
+//var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=cdl_2015&TRANSPARENT=true&SRS=EPSG:102004&BBOX=-3987459.135,168311.354,4472862.725,4177587.947&FORMAT=image/png&WIDTH=800&HEIGHT=400', {
+//    layers: 'cdl_2015'
+//}).addTo(map);
 
 
 map.setView([28.0, -82.8], 6.5);
