@@ -1,6 +1,6 @@
 //var mapboxAccessToken = 'pk.eyJ1IjoiYXJ0aHVyLW1hcHMiLCJhIjoiY2p4NHdjNXJrMDI1azQ5bTRwOW5jc2F5bSJ9.OSGinHj1JWVuEHIe91Eikw';
 
-var mapboxAccessToken = 'pk.eyJ1IjoiYXJ0dXJvbmVpbGwiLCJhIjoiY2tlbm05dHpxMDBidzJxb2FjeWFyOTRhaCJ9.Ji9pd3XHvpjYkC0dGl6RUA';
+//var mapboxAccessToken = 'pk.eyJ1IjoiYXJ0dXJvbmVpbGwiLCJhIjoiY2tlbm05dHpxMDBidzJxb2FjeWFyOTRhaCJ9.Ji9pd3XHvpjYkC0dGl6RUA';
    
 
 var map = L.map('mapid', {
@@ -24,10 +24,10 @@ var map = L.map('mapid', {
 
 var wmsLayer = L.tileLayer.wms('https://nassgeodata.gmu.edu/CropScapeService/wms_cdlall.cgi', {
    service='WMS',
-   version=1.1.1,
+   version='1.1.1',
    request='GetMap',
    layers: 'cdl_2015_fl',
-   SRS=EPSG:4326,
+   SRS='EPSG:4326',
    format: 'image/png',
    transparent: true,
 }).addTo(map);
